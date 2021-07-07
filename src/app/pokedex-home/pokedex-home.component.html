@@ -1,0 +1,9 @@
+<div class="pokedex-container">
+    <div *ngFor="let pokedex of pokedexList" class="card" style="width: 18rem;">
+      <div class="card-body">
+        <a [routerLink]="['/pokedex', pokedex.name]" class="btn">
+          <h5 class="card-title">{{pokedex.name}}</h5>
+        </a>
+      </div>
+    </div>
+</div>

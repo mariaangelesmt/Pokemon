@@ -1,0 +1,15 @@
+<div class="container">
+    <div *ngFor="let pokemon of pokemonList" class="card sub-container" style="width: 18rem;">
+        <img [src]="pokemon.image" alt ="pokemon">
+        <div class="paragraph card-body">
+          <h5 class="card-title">{{pokemon.name}}</h5> 
+          <!-- <a class="btn btn-primary">See moves</a> -->
+        </div>
+    </div>
+</div>
+<div class="button">
+  <button class="btn btn-primary" (click)="back()" [ngClass]="{'hidden' : pokemonIndex == 20}">Back</button>
+  <button class="btn btn-primary" (click)="next()" [ngClass]="{'hidden' : pokemonIndex >= pokemonList.length - 1}">Next</button>
+</div>
+
+

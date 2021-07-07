@@ -1,0 +1,21 @@
+.navbar-light .navbar-brand {
+    color: rgb(6, 176, 255);
+}
+
+.navbar-brand {
+    color: rgb(6, 176, 255);
+    font-weight: bold;
+}
+
+.nav-item:hover a,
+.nav-item .nav-link.active {
+    color:rgb(6, 176, 255);
+}
+
+.nav-item .nav-link {
+    color: black;
+}
+
+.img-poke {
+    margin: 7px;
+}

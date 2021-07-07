@@ -1,0 +1,19 @@
+<div class="fondo">
+  <div class="container1">
+    <div class="container">
+        <div *ngFor="let pokedexEntry of pokedexFiltered" class="card sub-container" style="width: 18rem;">
+            <img src="{{pokedexEntry.image}}" alt ="pokemon">
+            <div class="paragraph card-body">
+              <h5 class="card-title">{{pokedexEntry.entry_number}}. {{pokedexEntry.pokemon_species.name}}</h5>
+              <p *ngFor="let type of pokedexEntry.type">Type: {{type.name}}</p>
+            </div>
+        </div>
+    </div>
+    <div class="down">
+      <button class="btn btn-primary" (click)="back()" [ngClass]="{'hidden' : pokedexIndex == 20}">Back</button>
+      <button class="btn btn-primary" (click)="next()" [ngClass]="{'hidden' : pokedexIndex >= pokedexEntryList.length - 1}">Next</button>
+    </div>
+  </div>
+</div>
+
+

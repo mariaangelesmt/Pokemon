@@ -1,0 +1,42 @@
+
+.container {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    background-color: rgb(145, 37, 222);
+    padding: 40px 0;
+    max-width: 100%;
+}
+
+.button {
+    display: flex;
+    justify-content: space-between;
+    margin: 20px;
+}  
+
+button {
+    background-color: rgb(145, 37, 222);
+    border-color: rgb(103, 24, 160);
+}
+
+button:hover {
+    background-color: rgb(163, 56, 240);
+}
+
+.hidden {
+    overflow: hidden;
+}
+
+.card-body {
+    background-color: #f7d4d4;
+}
+
+img {
+    height: 350px;
+}
+
+img:hover {
+    background-color:rgba(163, 56, 240, 0.308);
+}
